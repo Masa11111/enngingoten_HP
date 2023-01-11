@@ -1,0 +1,74 @@
+.company_content {
+    margin-top: 250px;
+    color: rgb(27, 34, 76);
+}
+
+.company_wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+.company_content h3 {
+    width: 250px;
+    font-size: 110px;
+    position: relative;
+    color: rgb(255, 153, 51);
+}
+
+.company_content h3 span.en {
+    font-size: 30px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 7rem;
+    color: rgb(27, 34, 76);
+}
+
+.company_content h3 span.ja {
+    font-size: 16px;
+    font-weight: 400;
+    position: absolute;
+    top: 60%;
+    left: 7rem;
+    color: rgb(27, 34, 76);
+}
+
+.company_content table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    font-size: 1.3rem;
+}
+
+.company_content table tr {
+    height: 40px;
+    text-align: left;
+}
+
+.company_content table th {
+    width: 120px;
+}
+
+.company_content_map {
+    width: 600px;
+    height: 400px;
+    border-radius: 20px;
+}
+
+@media screen and (max-width: 1024px) {
+    .company_wrapper {
+        display: block;
+        flex: none;
+    }
+
+    .company_content_info {
+        width: 500px;
+        margin: 0 auto;
+    }
+
+    .company_content_map {
+        width: 500px;
+        display: block;
+        margin: 50px auto;
+    }
+}

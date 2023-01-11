@@ -1,0 +1,101 @@
+.about_content {
+    margin-top: 250px;
+}
+
+.about_content_wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.about_content .about_content_wrapper img {
+    width: 50%;
+    animation: imagerotate 20s ease 0s infinite;
+}
+
+.about-img {
+    width: 100%;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+    object-fit: cover;
+}
+
+.about-box {
+    width: 40%;
+    color: rgb(27, 34, 76);
+}
+
+.about-box h3 {
+    font-size: 110px;
+    position: relative;
+    color: rgb(255, 153, 51);
+}
+
+.about-box h3 span.en {
+    font-size: 30px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 5.5rem;
+    color: rgb(27, 34, 76);
+}
+
+.about-box h3 span.ja {
+    font-size: 16px;
+    font-weight: 400;
+    position: absolute;
+    top: 60%;
+    left: 6rem;
+    color: rgb(27, 34, 76);
+}
+
+.about-box h4 {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.about-box p {
+    font-size: 15px;
+}
+
+@keyframes imagerotate {
+    0%, 100% {
+        border-radius: 63% 37% 54% 46%/55% 48% 52% 45%;
+    }
+    14% {
+        border-radius: 40% 60% 54% 46%/49% 60% 40% 51%;
+    }
+    28% {
+        border-radius: 54% 46% 38% 62%/49% 70% 30% 51%;
+    }
+    42% {
+        border-radius: 61% 39% 55% 45%/61% 38% 62% 39%;
+    }
+    56% {
+        border-radius: 61% 39% 67% 33%/70% 50% 50% 30%;
+    }
+    70% {
+        border-radius: 50% 50% 34% 66%/56% 68% 32% 44%;
+    }
+    84% {
+        border-radius: 46% 54% 50% 50%/35% 61% 39% 65%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .about_content_wrapper {
+        display: block;
+        flex: none;
+    }
+
+    .about_content_wrapper .about-box{
+        margin: 0 auto;
+    }
+
+    .about_content_wrapper .about-img {
+        display: block;
+        margin: 50px auto 0;
+    }
+}
+

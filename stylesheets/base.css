@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Hiragino Sans', 'Meiryo', sans-serif;
+    scroll-behavior: smooth;
+}
+
+main {
+    line-height: 1.6;
+    display: block;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover,a:visited {
+    color: inherit;
+}
